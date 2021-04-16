@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        {% block title %} {% endblock %} | HRapp
+    </title>
+
+    {% load static %}
+    <link rel='stylesheet' href='{% static "bootstrap/dist/css/bootstrap.css" %}'>
+    {% block stylesheet %}
+    <!-- Стили -->
+    {% endblock %}
+</head>
+<body>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<script type="text/javascript" src="{% static 'bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+{% block scripts %}
+<!-- JavaScripts -->
+{% endblock %}
+</body>
+</html>

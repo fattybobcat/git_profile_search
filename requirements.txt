@@ -34,3 +34,4 @@ flake8
 python-dotenv
 django-multiselectfield==0.1.12
 sorl-thumbnail==12.7.0
+PyGithub
