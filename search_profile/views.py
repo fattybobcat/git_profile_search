@@ -3,7 +3,7 @@ import requests
 import json
 from github import Github
 def sort_data_by_parans(data):
-    
+
 # Create your views here.
 def api_s(request, user):
     # addr = 'https://api.github.com/users/' + user
