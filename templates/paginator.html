@@ -1,0 +1,4 @@
+{% load user_filters %}
+  <ul class="pagination justify-content-center">
+      {{ page|page_build:user_name|safe }}
+  </ul>

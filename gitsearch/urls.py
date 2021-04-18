@@ -1,9 +1,8 @@
+from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include
 
 urlpatterns = [
     path('', include('search_profile.urls')),
- #
     path('admin/', admin.site.urls),
 ]

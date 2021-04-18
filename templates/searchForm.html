@@ -2,8 +2,10 @@
 
 {% block content %}
     {% load user_filters %}
-    <h3> Data merged pull-request from {{ user_name }}</h3>
-            <h3> Number of merged pull-request {{ total_count }} </h3>
+    <h3> Pull-Request by {{ user_name }}</h3>
+    <h3> Total amount of merged pull-request {{ total_count }} </h3>
+    <h3> Show showing the latest {{ page.page_curent|last_pr }} Pull-Request</h3>
+    {% include "paginator.html" with user_name=user_name page=page%}
 <table class="table table-hover">
   <thead>
     <tr>
@@ -25,11 +27,9 @@
             <td>{{ value.url_search }}</td>
             <td>{{ value.stargazers_count }}</td>
             {{ value.open|addrowtable:value.closed|safe }}
-
-
     {% endfor %}
   </tbody>
 </table>
 
-
+{% include "paginator.html" %}
 {% endblock %}
