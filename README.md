@@ -2,7 +2,6 @@
 
 [![git_pull_request](https://github.com/fattybobcat/Git_profile_search/actions/workflows/main.yml/badge.svg)](https://github.com/fattybobcat/Git_profile_search/actions/workflows/main.yml)
 
-
 ## Описание
 
 Проект позволяет производить поиск Pull-Request определенного users.
