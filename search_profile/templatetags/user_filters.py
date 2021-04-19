@@ -9,29 +9,29 @@ def addrowtable(open, closed):
     while open != {} or closed != {}:
         if open != {} and closed != {}:
             key, value = closed.popitem()
-            table += "<td><a href='{0}' target='_blank''>{0}</a></td><td>{1}</td>".format(
-                value["url"],
-                value["comment"])
+            table += ("<td><a href='{0}' target='_blank''>{0}"
+                      "</a></td><td>{1}</td>").format(value["url"],
+                                                      value["comment"])
             key, value = open.popitem()
-            table += "<td><a href='{0}' target='_blank'>{0}</a></td><td>{1}</td>".format(
-                value["url"],
-                value["comment"])
+            table += ("<td><a href='{0}' target='_blank'>{0}"
+                      "</a></td><td>{1}</td>").format(value["url"],
+                                                      value["comment"])
             table += "</tr>"
             if open != {} or closed != {}:
                 table += "<tr><td></td><td></td><td></td><td></td>"
         elif closed != {}:
             key, value = closed.popitem()
-            table += "<td><a href='{0}'target='_blank'>{0}</a></td><td>{1}</td>".format(
-                value["url"],
-                value["comment"])
+            table += ("<td><a href='{0}'target='_blank'>{0}"
+                      "</a></td><td>{1}</td>").format(value["url"],
+                                                      value["comment"])
             table += "<td></td><td></td></tr>"
             if closed != {}:
                 table += "<tr><td></td><td></td><td></td><td></td>"
         else:
             key, value = open.popitem()
-            table += "<td><a href='{0}'target='_blank'>{0}</a></td><td>{1}</td>".format(
-                value["url"],
-                value["comment"])
+            table += ("<td><a href='{0}'target='_blank'>{0}"
+                      "</a></td><td>{1}</td>").format(value["url"],
+                                                      value["comment"])
             table += "<td></td><td</td></tr>"
             if open != {}:
                 table += "<tr><td></td><td></td><td>" \

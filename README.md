@@ -1,13 +1,16 @@
 # Git_profile_search
 
+[![git_pull_request](https://github.com/fattybobcat/Git_profile_search/actions/workflows/main.yml/badge.svg)](https://github.com/fattybobcat/Git_profile_search/actions/workflows/main.yml)
+
+
 ## Описание
 
 Проект позволяет производить поиск Pull-Request определенного users.
 При поиске, если user существует, будет предоставлена информация о Pull-Request данного user.
 На каждой странице будет выведено до 100 записей последний Pull-Request, рассортированных по проектам.
 У каждого проекта показано: 
-| №  | Name Project | Project Link | Star Project | First Header  | Merged Pull-Request Link | Numbers of Сomments  | SNot Merged Pull-Request Link | Numbers of Сomments |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |  ------------- |
+| №  | Name Project | Project Link | Star Project | Merged Pull-Request Link | Numbers of Сomments  | SNot Merged Pull-Request Link | Numbers of Сomments |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |  ------------- |
 
 ## Инициализация
 
