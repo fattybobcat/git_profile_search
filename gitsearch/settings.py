@@ -1,6 +1,10 @@
 # flake8: noqa
 import os
 
+from dotenv import load_dotenv
+
+load_dotenv()
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -87,3 +91,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static')
     ]
+
+USERNAME_GITHUB = os.environ.get('DB_ENGINE',
+                                 None)
+
+TOKEN_GITHUB = os.environ.get('DB_ENGINE',
+                                 None)

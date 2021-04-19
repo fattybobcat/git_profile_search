@@ -24,7 +24,7 @@
         <tr>
             <th scope="row">{{ value.count }}</th>
             <td>{{ value.name }}</td>
-            <td>{{ value.url_search }}</td>
+            <td><a href="{{ value.url_search }}" target="_blank">{{ value.url_search }}</a></td>
             <td>{{ value.stargazers_count }}</td>
             {{ value.open|addrowtable:value.closed|safe }}
     {% endfor %}
